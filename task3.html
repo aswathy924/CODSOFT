@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="task3.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="cal">
+                <form>
+                    <div class ="disp">
+                        <input type="text" name="num">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="num.value = '' " class="opt">
+                        <input type="button" value="DEL" onclick="num.value = num.value.toString().slice(0,-1)" class="opt">
+                        <input type="button" value="." onclick="num.value += '.' " class="operator">
+                        <input type="button" value="/" onclick="num.value += '/' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="num.value += '7' " class="numbers">
+                        <input type="button" value="8" onclick="num.value += '8' " class="numbers">
+                        <input type="button" value="9" onclick="num.value += '9' " class="numbers">
+                        <input type="button" value="*" onclick="num.value += '*' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="num.value += '4' " class="numbers">
+                        <input type="button" value="5" onclick="num.value += '5' " class="numbers">
+                        <input type="button" value="6" onclick="num.value += '6' " class="numbers">
+                        <input type="button" value="-" onclick="num.value += '-' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="num.value += '1' " class="numbers">
+                        <input type="button" value="2" onclick="num.value += '2' " class="numbers">
+                        <input type="button" value="3" onclick="num.value += '3' " class="numbers">
+                        <input type="button" value="+" onclick="num.value += '+' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="num.value += '00' " class="numbers">
+                        <input type="button" value="0" onclick="num.value += '0' " class="numbers">
+                        <input type="button" value="=" onclick="num.value = eval(num.value)" class="equal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
